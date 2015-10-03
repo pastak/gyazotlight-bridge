@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["index.js"]
+      "js": ["content.js"]
     }
   ],
   "manifest_version": 2

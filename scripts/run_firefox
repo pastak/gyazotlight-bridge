@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+cd ./build/firefox/
+jpm run --debug

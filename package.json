@@ -1,0 +1,31 @@
+{
+  "name": "gyazotlight-bridge",
+  "version": "0.0.2",
+  "description": "",
+  "main": "./main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "./scripts/generate",
+    "build": "./scripts/build",
+    "firefox": "npm run generate && ./scripts/run_firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pastak/gyazotlight-bridge-chrome.git"
+  },
+  "author": "pastak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pastak/gyazotlight-bridge-chrome/issues"
+  },
+  "homepage": "https://github.com/pastak/gyazotlight-bridge-chrome#readme",
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "crx": "^3.0.3",
+    "jpm": "^1.0.1"
+  },
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  }
+}
