@@ -1,11 +1,13 @@
 #!/usr/bin/env sh
 
 # setup chrome
+echo "generate files on build/chrome"
 ./node_modules/.bin/browserify common/content.js -o build/chrome/content.js
 cp chrome/main.js build/chrome/
 cp manifest.json build/chrome/
 
 # setup firefox
+echo "generate files on build/firefox"
 cp ./build/chrome/content.js build/firefox/content.js
 cp firefox/* build/firefox/
 cp package.json build/firefox/

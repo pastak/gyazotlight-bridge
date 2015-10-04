@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 
+echo "start running firefox with xpi"
 cd ./build/firefox/
 jpm run --debug

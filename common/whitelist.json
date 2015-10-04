@@ -1,0 +1,12 @@
+[
+{
+  match: "^https://github.com/",
+  selector: "textarea",
+  type: "markdown"
+},
+{
+  match: "^https?://*qiita.com/",
+  selector: ".editorMarkdown_textarea, .commentForm_textarea",
+  type: "markdown"
+}
+]

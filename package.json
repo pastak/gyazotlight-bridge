@@ -1,13 +1,13 @@
 {
   "name": "gyazotlight-bridge",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "./main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "./scripts/generate",
-    "build": "./scripts/build",
-    "firefox": "npm run generate && ./scripts/run_firefox"
+    "build": "./scripts/generate && ./scripts/build",
+    "firefox": "./scripts/generate && ./scripts/run_firefox"
   },
   "repository": {
     "type": "git",
