@@ -7,5 +7,5 @@ cp manifest.json build/chrome/
 
 # setup firefox
 cp ./build/chrome/content.js build/firefox/content.js
-cp firefox/main.js build/firefox/
+cp firefox/* build/firefox/
 cp package.json build/firefox/

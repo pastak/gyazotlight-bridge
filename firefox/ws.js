@@ -1,7 +1,8 @@
-chrome.runtime.onMessage.addListener(function (message,sender,res) {
+
+self.port.on('send', function() {
   var ws = new WebSocket('ws://localhost:3652/')
   ws.onmessage = function (event) {
-    res(event.data)
+    self.port.emit('res', event.data)
     ws.close()
   }
   ws.onopen = function () {
@@ -9,5 +10,4 @@ chrome.runtime.onMessage.addListener(function (message,sender,res) {
     ws.send('open')
     console.log('Send!')
   }
-  return true
 })
