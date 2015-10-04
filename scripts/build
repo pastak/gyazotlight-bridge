@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-echo "packing crx adn xpi"
+echo "packing crx and xpi"
 ./node_modules/.bin/crx pack ./build/chrome --zip-output ./build/packages/chrome.zip -o ./build/packages/chrome.crx
 cd ./build/firefox
 ../../node_modules/.bin/jpm xpi
